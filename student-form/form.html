@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Details Form</title>
+ <style>
+ body {
+ background-color: #e0f7fa;
+ padding: 20px;
+ }
+ .box {
+ width: 400px;
+ margin: auto;
+ padding: 20px;
+ background-color: #f4cbd9;
+ }
+ label {
+ display: block;
+ margin-top: 12px;
+ }
+ input, select {
+ width: 100%;
+ padding: 5px;
+ }
+ input[type="radio"], input[type="checkbox"] {
+ width: auto;
+ }
+ .button {
+ margin-top: 15px;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="box">
+ <center> <h2>Student Details Form</h2> </center>
+ <form onsubmit="alert('Form Submitted!');">
+ <label>First Name:</label>
+ <input type="text" required>
+ <label>Last Name:</label>
+ <input type="text" required>
+ <label>E-mail:</label>
+ <input type="email" required>
+ <label>Register Number:</label>
+ <input type="text" required>
+ <label>Age:</label>
+ <input type="number" required>
+ <label>Gender:</label>
+ <div>
+ Male <input type="radio" name="g" required>
+ Female <input type="radio" name="g">
+ </div>
+ <label>Mobile Number:</label>
+ <input type="text" required>
+ <label>Course / Department:</label>
+ <input type="text" required>
+ <label>Year / Class:</label>
+ <select required>
+ <option value="">Select Year</option>
+ <option>1st Year</option>
+ <option>2nd Year</option>
+ <option>3rd Year</option>
+ </select>
+ <label>Date of Joining:</label>
+ <input type="date" required>
+ <label>
+ <input type="checkbox" required>
+ I hereby declare that all the above details are true
+</label>
+ <div class="button">
+ <input type="reset">
+ <input type="submit">
+ </div>
+ </form>
+</div>
+</body>
+</html>
