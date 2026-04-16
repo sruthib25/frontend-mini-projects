@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Daily Muse</title>
+    <style>
+        :root {
+            --shadow: 0 5px 15px rgba(0,0,0,.08);
+        }
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f9f9f9;
+            color: #333;
+            font-family: sans-serif;
+        }
+        header {
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 40px;
+        }
+        header p {
+            font-size: 20px;
+        }
+        nav {
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,.1);
+        }
+        nav a {
+            margin: 0 15px;
+            color: #555;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform .3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .content a {
+            color: #0077cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heartstrings Blog</h1>
+        <p>Stories • Thoughts • Creative Sparks</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Travel</a>
+        <a href="#">Tech</a>
+    </nav>
+    <main class="container">
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" alt="Beauty">
+            <div class="content">
+                <h2>Finding Beauty in Everyday Life</h2>
+                <p>Sometimes the smallest moments carry the biggest meaning. Let’s talk about slowing down.</p>
+                <a href="beauty.html">Read More →</a>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Travel">
+            <div class="content">
+                <h2>Why Solo Travel Changes You</h2>
+                <p>Traveling alone teaches independence, confidence, and a deeper connection with yourself.</p>
+                <a href="blog-solo-travel.html">Read More →</a>
+            </div>
+        </article>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f" alt="Tech">
+            <div class="content">
+                <h2>Tech Habits That Improve Focus</h2>
+                <p>From digital detoxes to smart tools, here’s how technology can work for you.</p>
+                <a href="tech.html">Read More →</a>
+            </div>
+        </article>
+    </main>
+    <footer>
+        © 2025 The Daily Muse | Designed with ❤️ & curiosity
+    </footer>
+</body>
+</html>
