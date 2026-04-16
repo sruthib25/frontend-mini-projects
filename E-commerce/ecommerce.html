@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AudioPro</title>
+    <style>    body { 
+        margin: 0;          
+        background: #fcfcfc;         
+        color:#333; }
+
+        .header {         
+            background: #0b5c3b;          
+            color: white;         
+            padding: 20px 40px; }
+
+        .banner {   
+            background: #f8efe6;         
+            padding: 50px;          
+            margin: 20px;         
+            border-radius: 15px; }
+
+        .section {         
+            padding: 20px;         
+            justify-content: center;    
+            text-align: center;   
+             }
+        
+        .shipping {          
+            display: grid;          
+            gap: 15px;         
+            background: white;          
+            padding: 25px;          
+            border-radius: 10px;          
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);          
+            text-align: left; }
+
+        .product { 
+            display: flex;         
+            flex-wrap: wrap;          
+            justify-content: center;         
+            gap: 20px; }
+
+        .card {          
+            width: 260px;          
+            background: white;          
+            padding: 20px;          
+            border-radius: 12px;          
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);  }
+
+         .card img { 
+            width: 100%;          
+            height: 150px;          
+            object-fit: contain; }
+
+        .price { font-weight: bold;          
+                 color: #0b5c3b; }
+
+        input, select {          
+            width: 100%;          
+            padding: 8px;          
+            margin: 5px;          
+            border: 1px solid #ddd;          
+            border-radius: 4px;          
+            box-sizing: border-box; }
+
+        button {         
+            padding: 12px 30px;          
+            border: none;          
+            border-radius: 5px;          
+            font-weight: bold;          
+            color: white;  }
+
+        .btnsubmit { background: #0b5c3b; }
+
+        .btnclear { background: #e74c3c; }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>AudioPro</h2>
+    </div>
+
+    <div class="banner">
+        <h1>Premium Sound,<br>Personalized For You</h1>
+        <p>Select your favorite gear and fill in your details below.</p>
+    </div>
+
+    <div class="product">
+    <div class="card">
+        <img src="earbuds.jpg">
+        <h4>Wireless Earbuds</h4>
+        <p class="price">₹2,999</p>
+        <input type="number" value="0" min="0">
+        <select>
+            <option>Black</option>
+            <option>White</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <img src="airpods.jpg">
+        <h4>AirPods Max</h4>
+        <p class="price">₹59,999</p>
+        <input type="number" value="0" min="0">
+        <select>
+            <option>Silver</option>
+            <option>Space Grey</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <img src="bose.webp">
+        <h4>Bose QC45</h4>
+        <p class="price">₹28,999</p>
+        <input type="number" value="0" min="0">
+        <select>
+            <option>Standard</option>
+            <option>Noise Cancelling</option>
+        </select>
+    </div>
+    </div>
+
+    <form class="section">
+    <h3> 2. Shipping Details</h3>
+    <div class="shipping">
+        <div>
+            <label>Full Name</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label>Email Address</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label>Phone Number</label>
+            <input type="tel">
+        </div>
+        <div>
+            <label>Delivery Address</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div style="margin: 40px;">
+        <button type="submit" class="btnsubmit">PLACE ORDER</button>
+        <button type="reset" class="btnclear">CLEAR</button>
+    </div>
+</form>
+</body>
+</html>
