@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Slider</title>
+<style> body{ 
+    display:flex;     
+    justify-content:center;     
+    flex-direction: column;     
+    align-items:center;     
+    height:100vh;     
+    background:#f5f5ff; } 
+    
+    .slider{     
+        width:450px;     
+        position:relative;   } 
+    
+    img{     
+        width:100%;     
+        height: 300px;     
+        border-radius:10px;  } 
+        
+    button{ 
+        position:absolute; 
+        top:45%; 
+        background:#37363e; 
+        color:white; 
+        border:none; 
+        padding:5px 10px;
+}
+
+.prev{left:0;}
+
+.next{right:0;}
+
+</style>
+</head>
+<body>
+      <h1 class="title">INTERACTIVE IMAGE SLIDER</h1>
+<div class="slider">
+<button class="prev" onclick="change(-1)">❮</button>
+<img id="slide" src="lotuss.jpg">
+<button class="next" onclick="change(1)">❯</button>
+</div> 
+<script> 
+let images = ["lotuss.jpg","rose.jpg","tu.jpg","daisy.jpg","lily.jpg"]; 
+let i = 0; function change(n){
+                i += n;     
+                if(i >= images.length) i = 0;     
+                if(i < 0) i = images.length -1;     
+                document.getElementById("slide").src = images[i];
+}
+</script>
+</body>
+</html>
