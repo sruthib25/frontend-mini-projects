@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Flexbox</title>
+
+<style> body{
+
+    font-family:Arial;     text-align:center;     background:#f4f4f4;
+
+}
+
+ 
+
+.container{     display:flex;     flex-wrap:wrap;     justify-content:center;     gap:20px;     width:600px;     margin:auto;
+
+}
+
+ 
+
+.card{     width:180px;     height:120px;     background:#bde0fe;     display:flex;     justify-content:center;     align-items:center;     text-decoration:none;     color:black;     border-radius:10px;
+
+}
+
+ 
+
+.popup{
+
+    position:fixed;     inset:0;     background:rgba(0,0,0,.6);     display:none;
+
+}
+
+ 
+
+.popup:target{ display:block; }
+
+ 
+
+.popup img{     width:500px;     margin-top:100px;     border-radius:10px;
+
+}
+
+</style>
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+<h2>Click a Card </h2>
+
+ 
+
+<div class="container">
+
+    <a href="#p1" class="card">Lotus</a>
+
+    <a href="#p2" class="card">Lilly</a>
+
+    <a href="#p3" class="card">Hibiscus</a>
+
+    <a href="#p4" class="card">Rose</a>
+
+    <a href="#p5" class="card">Tulip</a>
+
+    <a href="#p6" class="card">Daisy</a>
+
+</div>
+
+ 
+
+<div id="p1" class="popup"><a href="#"><img src="lotuss.jpg"></a></div>
+
+<div id="p2" class="popup"><a href="#"><img src="lily.jpg"></a></div>
+
+<div id="p3" class="popup"><a href="#"><img src="hi.jpg"></a></div>
+
+<div id="p4" class="popup"><a href="#"><img src="rose.jpg"></a></div>
+
+<div id="p5" class="popup"><a href="#"><img src="tu.jpg"></a></div>
+
+<div id="p6" class="popup"><a href="#"><img src="daisy.jpg"></a></div>
+
+ 
+
+</body>
+
+</html> 
