@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InnovateX '26</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            background: #203a43;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: #2c5364;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #00d2ff;
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+        }
+        .tagline {
+            color: #ccc;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+            font-style: italic;
+        }
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .detail-item {
+            background: #1c313a;
+            padding: 10px;
+            border-radius: 8px;
+            width: 48%;
+            font-size: 14px;
+            border: 1px solid #3e5f6e;
+        }
+        .detail-item b {
+            color: #00d2ff;
+            display: block;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        h3 {
+            color: #ff9d00;
+            margin-top: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid #555;
+            display: flex;
+            justify-content: space-between;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .contact-box {
+            margin-top: 15px;
+            background: #00d2ff;
+            color: #1c313a;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .contact-box:hover {
+            background: #00b4db;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>InnovateX '26</h1>
+    <p class="tagline">Exploring the Frontiers of Technology</p>
+
+    <div class="details">
+        <div class="detail-item"><b>Date</b> February 25, 2026</div>
+        <div class="detail-item"><b>Time</b> 9:00 AM - 5:00 PM</div>
+        <div class="detail-item"><b>Venue</b> University Center</div>
+        <div class="detail-item"><b>Entry</b> Free Registration</div>
+    </div>
+
+    <h3>Events List</h3>
+    <ul>
+        <li><span>Technical Quiz</span><span>10:00 AM</span></li>
+        <li><span>Paper Presentation</span><span>11:30 AM</span></li>
+        <li><span>Code Debugging</span><span>02:00 PM</span></li>
+        <li><span>Web Design Workshop</span><span>03:30 PM</span></li>
+    </ul>
+
+    <h3>How to Register</h3>
+    <p style="font-size: 14px; color: #ccc;">
+        Send your Name, Dept, and Event choice to:
+    </p>
+    <a href="mailto:register@innovatex.com" class="contact-box">
+        register@innovatex.com
+    </a>
+</div>
+
+</body>
+</html>
